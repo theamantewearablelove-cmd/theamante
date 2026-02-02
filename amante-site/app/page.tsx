@@ -25,6 +25,49 @@ export default function Home() {
 
         {/* SECOND SECTION */}
         <section className="mt-40 border-t border-gray-700 pt-20">
+                  {/* PRODUCT PREVIEW GRID */}
+        <div className="mt-16 grid grid-cols-1 md:grid-cols-3 gap-10">
+
+          {/* Card 1 */}
+          <div className="border border-gray-700 p-8 hover:border-white transition">
+            <h3 className="text-xl font-semibold">
+              Eros Hoodie
+            </h3>
+            <p className="mt-3 text-gray-400 text-sm">
+              Heavyweight comfort, built for lovers who carry silence.
+            </p>
+            <p className="mt-6 text-white font-bold">
+              ₹3,499
+            </p>
+          </div>
+
+          {/* Card 2 */}
+          <div className="border border-gray-700 p-8 hover:border-white transition">
+            <h3 className="text-xl font-semibold">
+              Lover’s Tee
+            </h3>
+            <p className="mt-3 text-gray-400 text-sm">
+              Minimal design. Maximum meaning.
+            </p>
+            <p className="mt-6 text-white font-bold">
+              ₹1,999
+            </p>
+          </div>
+
+          {/* Card 3 */}
+          <div className="border border-gray-700 p-8 hover:border-white transition">
+            <h3 className="text-xl font-semibold">
+              Amante Jacket
+            </h3>
+            <p className="mt-3 text-gray-400 text-sm">
+              A statement piece for those who don’t chase status.
+            </p>
+            <p className="mt-6 text-white font-bold">
+              ₹5,999
+            </p>
+          </div>
+
+        </div>
           <h2 className="text-4xl font-semibold">
             Eros Collection
           </h2>
