@@ -29,7 +29,7 @@ export default function Home() {
         <div className="mt-16 grid grid-cols-1 md:grid-cols-3 gap-10">
 
           {/* Card 1 */}
-          <div className="border border-gray-700 overflow-hidden rounded-2xl hover:border-white transition hover:-translate-y-2 transition-transform duration-300">
+          <div className="border border-gray-700 overflow-hidden rounded-2xl hover:border-white hover:-translate-y-2 hover:shadow-2xl transition-all duration-300">
 
   <div className="h-56 bg-gradient-to-b from-gray-800 to-black"></div>
 
@@ -44,9 +44,8 @@ export default function Home() {
 </div>
 
           {/* Card 2 */}
-          <div className="border border-gray-700 overflow-hidden rounded-2xl hover:border-white transition hover:-translate-y-2 transition-transform duration-300">
-
-  <div className="h-56 bg-gradient-to-b from-gray-800 to-black"></div>
+          <div className="border border-gray-700 overflow-hidden rounded-2xl hover:border-white hover:-translate-y-2 hover:shadow-2xl transition-all duration-300">
+ <div className="h-56 bg-gradient-to-b from-gray-800 to-black"></div>
 
   <div className="p-8">
     <h3 className="text-xl font-semibold">Eros Hoodie</h3>
@@ -59,7 +58,7 @@ export default function Home() {
 </div>
 
           {/* Card 3 */}
-         <div className="border border-gray-700 overflow-hidden rounded-2xl hover:border-white transition hover:-translate-y-2 transition-transform duration-300">
+         <div className="border border-gray-700 overflow-hidden rounded-2xl hover:border-white hover:-translate-y-2 hover:shadow-2xl transition-all duration-300">
 
   <div className="h-56 bg-gradient-to-b from-gray-800 to-black"></div>
 
