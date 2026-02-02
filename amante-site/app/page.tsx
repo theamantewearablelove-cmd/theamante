@@ -29,17 +29,19 @@ export default function Home() {
         <div className="mt-16 grid grid-cols-1 md:grid-cols-3 gap-10">
 
           {/* Card 1 */}
-          <div className="border border-gray-700 p-8 hover:border-white transition">
-            <h3 className="text-xl font-semibold">
-              Eros Hoodie
-            </h3>
-            <p className="mt-3 text-gray-400 text-sm">
-              Heavyweight comfort, built for lovers who carry silence.
-            </p>
-            <p className="mt-6 text-white font-bold">
-              ₹3,499
-            </p>
-          </div>
+          <div className="border border-gray-700 overflow-hidden rounded-2xl hover:border-white transition">
+
+  <div className="h-56 bg-gradient-to-b from-gray-800 to-black"></div>
+
+  <div className="p-8">
+    <h3 className="text-xl font-semibold">Eros Hoodie</h3>
+    <p className="mt-3 text-gray-400 text-sm">
+      Heavyweight comfort, built for lovers who carry silence.
+    </p>
+    <p className="mt-6 text-white font-bold">₹3,499</p>
+  </div>
+
+</div>
 
           {/* Card 2 */}
           <div className="border border-gray-700 p-8 hover:border-white transition">
