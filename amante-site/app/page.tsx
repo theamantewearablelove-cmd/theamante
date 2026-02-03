@@ -1,90 +1,43 @@
-import Navbar from "../components/Navbar";
+{/* COLLECTION GRID */}
+<div className="mt-20 grid grid-cols-1 md:grid-cols-3 gap-10">
 
-export default function Home() {
-  return (
-    <>
-      <Navbar />
+  {/* EROS */}
+  <a href="/collection/eros">
+    <div className="border border-gray-700 overflow-hidden rounded-2xl hover:border-white hover:-translate-y-2 hover:shadow-2xl transition-all duration-300">
+      <div className="h-56 bg-gradient-to-b from-gray-800 to-black"></div>
+      <div className="p-8">
+        <h3 className="text-2xl font-semibold">Eros</h3>
+        <p className="mt-3 text-gray-400 text-sm">
+          Passion. Desire. The first chapter of love.
+        </p>
+      </div>
+    </div>
+  </a>
 
-      <main className="min-h-screen bg-black text-white px-12 pt-40">
-        
-        {/* HERO */}
-        <section className="max-w-4xl">
-          <h1 className="text-7xl font-bold leading-tight">
-            Love is the only Luxury.
-          </h1>
+  {/* PHILAUTIA */}
+  <a href="/collection/philautia">
+    <div className="border border-gray-700 overflow-hidden rounded-2xl hover:border-white hover:-translate-y-2 hover:shadow-2xl transition-all duration-300">
+      <div className="h-56 bg-gradient-to-b from-gray-800 to-black"></div>
+      <div className="p-8">
+        <h3 className="text-2xl font-semibold">Philautia</h3>
+        <p className="mt-3 text-gray-400 text-sm">
+          Self-love. Quiet power. Inner luxury.
+        </p>
+      </div>
+    </div>
+  </a>
 
-          <p className="mt-8 text-xl text-gray-300 max-w-2xl">
-            The Amante is not fashion for status.
-            It is fashion for those who understand love as the rarest currency.
-          </p>
-
-          <button className="mt-12 px-12 py-4 border border-white hover:bg-white hover:text-black transition">
-            Explore Collection
-          </button>
-        </section>
-
-        {/* SECOND SECTION */}
-        <section className="mt-40 border-t border-gray-700 pt-20">
-                  {/* PRODUCT PREVIEW GRID */}
-        <div className="mt-16 grid grid-cols-1 md:grid-cols-3 gap-10">
-
-          {/* Card 1 */}
-          <div className="border border-gray-700 overflow-hidden rounded-2xl hover:border-white hover:-translate-y-2 hover:shadow-2xl transition-all duration-300">
-
-  <div className="h-56 bg-gradient-to-b from-gray-800 to-black"></div>
-
-  <div className="p-8">
-    <h3 className="text-xl font-semibold">Eros Hoodie</h3>
-    <p className="mt-3 text-gray-400 text-sm">
-      Heavyweight comfort, built for lovers who carry silence.
-    </p>
-    <p className="mt-6 text-white font-bold">₹3,499</p>
-  </div>
-
-</div>
-
-          {/* Card 2 */}
-          <div className="border border-gray-700 overflow-hidden rounded-2xl hover:border-white hover:-translate-y-2 hover:shadow-2xl transition-all duration-300">
- <div className="h-56 bg-gradient-to-b from-gray-800 to-black"></div>
-
-  <div className="p-8">
-    <h3 className="text-xl font-semibold">Eros Hoodie</h3>
-    <p className="mt-3 text-gray-400 text-sm">
-      Heavyweight comfort, built for lovers who carry silence.
-    </p>
-    <p className="mt-6 text-white font-bold">₹3,499</p>
-  </div>
+  {/* GAIA */}
+  <a href="/collection/gaia">
+    <div className="border border-gray-700 overflow-hidden rounded-2xl hover:border-white hover:-translate-y-2 hover:shadow-2xl transition-all duration-300">
+      <div className="h-56 bg-gradient-to-b from-gray-800 to-black"></div>
+      <div className="p-8">
+        <h3 className="text-2xl font-semibold">Gaia</h3>
+        <p className="mt-3 text-gray-400 text-sm">
+          Earth. Calm. Love that feels eternal.
+        </p>
+      </div>
+    </div>
+  </a>
 
 </div>
-
-          {/* Card 3 */}
-         <div className="border border-gray-700 overflow-hidden rounded-2xl hover:border-white hover:-translate-y-2 hover:shadow-2xl transition-all duration-300">
-
-  <div className="h-56 bg-gradient-to-b from-gray-800 to-black"></div>
-
-  <div className="p-8">
-    <h3 className="text-xl font-semibold">Eros Hoodie</h3>
-    <p className="mt-3 text-gray-400 text-sm">
-      Heavyweight comfort, built for lovers who carry silence.
-    </p>
-    <p className="mt-6 text-white font-bold">₹3,499</p>
-  </div>
-
-</div>
-
-
-        </div>
-          <h2 className="text-4xl font-semibold">
-            Eros Collection
-          </h2>
-
-          <p className="mt-4 text-gray-400 max-w-xl">
-            The first chapter of wearable love — raw, intimate, unapologetic.
-          </p>
-        </section>
-
-      </main>
-    </>
-  );
-}
-
