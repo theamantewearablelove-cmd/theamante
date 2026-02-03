@@ -1,23 +1,27 @@
 import Navbar from "../components/Navbar";
 import Link from "next/link";
 
-const collections = [
+ const collections = [
   {
     name: "Eros",
     tagline: "Passion. Desire. The first chapter of love.",
     slug: "eros",
+    banner: "/banners/eros-banner.jpg",
   },
   {
     name: "Philautia",
     tagline: "Self-love, refined into wearable luxury.",
     slug: "philautia",
+    banner: "/banners/philautia-banner.jpg",
   },
   {
     name: "Gaia",
     tagline: "Earthy calm. Love grounded in nature.",
     slug: "gaia",
+    banner: "/banners/gaia-banner.jpg",
   },
 ];
+
 
 export default function Home() {
   return (
@@ -49,7 +53,12 @@ export default function Home() {
               className="group border border-gray-800 rounded-2xl overflow-hidden hover:border-[#B08D57] transition-all duration-300"
             >
               {/* Banner Block */}
-              <div className="h-64 bg-gradient-to-b from-gray-800 to-black"></div>
+             <img
+  src={col.banner}
+  alt={col.name}
+  className="h-64 w-full object-cover opacity-80 group-hover:opacity-100 transition duration-500"
+/>
+
 
               {/* Text */}
               <div className="p-8">
