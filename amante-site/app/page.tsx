@@ -47,17 +47,23 @@ export default function Home() {
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
           {collections.map((col) => (
-            <Link
-              key={col.slug}
-              href={`/collection/${col.slug}`}
-              className="group border border-gray-800 rounded-2xl overflow-hidden hover:border-[#B08D57] transition-all duration-300"
-            >
+           <Link
+  key={col.slug}
+  href={`/collection/${col.slug}`}
+  className="group border border-gray-800 rounded-2xl overflow-hidden 
+  hover:border-[#B08D57] hover:-translate-y-3 hover:shadow-2xl 
+  transition-all duration-500"
+>
+
               {/* Banner Block */}
              <img
   src={col.banner}
   alt={col.name}
-  className="h-64 w-full object-cover opacity-80 group-hover:opacity-100 transition duration-500"
+  className="h-64 w-full object-cover opacity-80 
+  group-hover:opacity-100 group-hover:scale-105 
+  transition duration-700"
 />
+
 
 
               {/* Text */}
