@@ -24,3 +24,28 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+/* Luxury film grain */
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background-image: url("/textures/grain.png");
+  opacity: 0.04;
+  pointer-events: none;
+  z-index: 1;
+}
+@keyframes stringDrift {
+  0% {
+    transform: translateX(-50%) translateX(0);
+  }
+  50% {
+    transform: translateX(-50%) translateX(14px);
+  }
+  100% {
+    transform: translateX(-50%) translateX(0);
+  }
+}
+
+.animate-string-drift {
+  animation: stringDrift 12s ease-in-out infinite;
+}

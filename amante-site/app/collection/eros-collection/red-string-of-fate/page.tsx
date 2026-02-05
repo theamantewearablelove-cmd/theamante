@@ -1,9 +1,15 @@
 import Navbar from "../../../../components/Navbar";
+import RedString from "../../../../components/RedString";
 
 export default function RedStringOfFate() {
   return (
     <main className="bg-black text-white">
       <Navbar />
+      <RedString />
+      {/* RED STRING LINE */}
+<div className="fixed left-1/2 top-0 h-full w-px bg-gradient-to-b 
+from-transparent via-red-700/40 to-transparent pointer-events-none z-0" />
+
 
       {/* HERO WITH BANNER */}
       <section className="relative h-screen flex items-center justify-center">
