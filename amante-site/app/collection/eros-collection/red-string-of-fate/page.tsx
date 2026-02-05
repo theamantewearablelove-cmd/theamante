@@ -1,27 +1,28 @@
 import Navbar from "../../../../components/Navbar";
-import RedString from "../../../../components/RedString";
 
 export default function RedStringOfFate() {
   return (
-    <main className="bg-black text-white">
+    <main className="text-white relative">
       <Navbar />
-      <RedString />
-      {/* RED STRING LINE */}
-<div className="fixed left-1/2 top-0 h-full w-px bg-gradient-to-b 
-from-transparent via-red-700/40 to-transparent pointer-events-none z-0" />
 
+      {/* FIXED BACKGROUND LAYER */}
+      <div
+        className="fixed inset-0 -z-10"
+        style={{
+          backgroundImage: "url('/backgrounds/red-string-bg.png')",
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+          backgroundRepeat: "no-repeat",
+        }}
+      />
 
-      {/* HERO WITH BANNER */}
-      <section className="relative h-screen flex items-center justify-center">
-        <img
-          src="/pages/red-string.jpg"
-          alt="The Red String of Fate"
-          className="absolute inset-0 h-full w-full object-cover opacity-40"
-        />
-        <div className="absolute inset-0 bg-black/60"></div>
+      {/* DARK OVERLAY */}
+      <div className="fixed inset-0 bg-black/70 -z-10" />
 
-        <div className="relative z-10 text-center px-6">
-          <h1 className="text-6xl md:text-7xl font-bold text-[#B08D57] tracking-tight">
+      {/* HERO */}
+      <section className="h-screen flex items-center justify-center text-center px-6">
+        <div>
+          <h1 className="text-6xl md:text-7xl font-bold tracking-tight text-[#7A0B0B]">
             The Red String of Fate
           </h1>
 
@@ -32,34 +33,30 @@ from-transparent via-red-700/40 to-transparent pointer-events-none z-0" />
         </div>
       </section>
 
-      {/* STORY SECTION */}
+      {/* STORY */}
       <section className="px-8 md:px-20 py-32 max-w-4xl mx-auto space-y-24">
-
         <p className="text-2xl leading-relaxed text-gray-200">
           They say an invisible red thread connects those who are destined
           to meet — regardless of time, distance, or circumstance.
         </p>
 
-        <blockquote className="border-l-2 border-[#B08D57] pl-8 text-3xl italic text-gray-300">
+        <blockquote className="border-l-2 border-[#8B0000] pl-8 text-3xl italic text-gray-300">
           “It may stretch.  
           It may tangle.  
           But it never breaks.”
         </blockquote>
 
         <p className="text-xl leading-relaxed text-gray-400">
-          Love does not always arrive loudly.
-          Sometimes it waits — patient, silent —
+          Love does not always arrive loudly.  
+          Sometimes it waits — patient, silent —  
           until the moment you are ready to feel it.
         </p>
       </section>
 
-      {/* PRODUCT REVEAL */}
-      <section className="px-8 md:px-20 pb-40 max-w-5xl mx-auto">
-
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
-
-          {/* PRODUCT IMAGE */}
-          <div className="h-[500px] rounded-3xl overflow-hidden">
+      {/* PRODUCT 1 — IMAGE LEFT */}
+      <section className="px-8 md:px-20 py-32 max-w-7xl mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-20 items-center">
+          <div className="h-[520px] rounded-3xl overflow-hidden">
             <img
               src="/products/eros-hoodie.jpg"
               alt="Eros Hoodie"
@@ -67,7 +64,6 @@ from-transparent via-red-700/40 to-transparent pointer-events-none z-0" />
             />
           </div>
 
-          {/* PRODUCT DETAILS */}
           <div>
             <h2 className="text-4xl font-semibold text-[#B08D57]">
               Eros Hoodie
@@ -79,14 +75,53 @@ from-transparent via-red-700/40 to-transparent pointer-events-none z-0" />
               A garment bound by meaning, not trends.
             </p>
 
-            <p className="mt-8 text-2xl font-bold text-white">
-              ₹3,499
-            </p>
+            <p className="mt-8 text-2xl font-bold">₹3,499</p>
 
-            <button className="mt-10 px-12 py-4 border border-[#B08D57] text-[#B08D57] hover:bg-[#B08D57] hover:text-black transition duration-300">
+            <button className="mt-10 px-12 py-4 border border-[#B08D57] text-[#B08D57] hover:bg-[#B08D57] hover:text-black transition">
               Buy When Released
             </button>
           </div>
+        </div>
+      </section>
+
+      {/* POETIC BREAK */}
+      <section className="py-40 px-6 text-center max-w-4xl mx-auto">
+        <p className="text-2xl md:text-3xl font-light leading-relaxed text-gray-300">
+          “Some connections do not arrive to stay.  
+          They arrive to change you.”
+        </p>
+      </section>
+
+      {/* PRODUCT 2 — IMAGE RIGHT */}
+      <section className="px-8 md:px-20 py-32 max-w-7xl mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-20 items-center">
+
+          <div className="order-2 md:order-1">
+            <h2 className="text-4xl font-semibold text-[#B08D57]">
+              Eros Essential Tee
+            </h2>
+
+            <p className="mt-6 text-gray-400 text-lg leading-relaxed">
+              Designed for moments that don’t announce themselves.
+              Soft structure. Quiet presence.
+              Love, worn lightly.
+            </p>
+
+            <p className="mt-8 text-2xl font-bold">₹1,999</p>
+
+            <button className="mt-10 px-12 py-4 border border-[#B08D57] text-[#B08D57] hover:bg-[#B08D57] hover:text-black transition">
+              Buy When Released
+            </button>
+          </div>
+
+          <div className="order-1 md:order-2 h-[520px] rounded-3xl overflow-hidden">
+            <img
+              src="/products/eros-tee.jpg"
+              alt="Eros Essential Tee"
+              className="h-full w-full object-cover"
+            />
+          </div>
+
         </div>
       </section>
     </main>
