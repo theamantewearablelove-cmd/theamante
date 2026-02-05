@@ -17,12 +17,12 @@ export default function RedStringOfFate() {
       />
 
       {/* DARK OVERLAY */}
-      <div className="fixed inset-0 bg-black/70 -z-10" />
+      <div className="fixed inset-0 bg-black/85 -z-10" />
 
       {/* HERO */}
       <section className="h-screen flex items-center justify-center text-center px-6">
         <div>
-          <h1 className="text-6xl md:text-7xl font-bold tracking-tight text-[#7A0B0B]">
+          <h1 className="text-6xl md:text-7xl font-bold tracking-tight text-[#B08D57]">
             The Red String of Fate
           </h1>
 
@@ -65,7 +65,7 @@ export default function RedStringOfFate() {
           </div>
 
           <div>
-            <h2 className="text-4xl font-semibold text-[#B08D57]">
+            <h2 className="text-4xl font-semibold text-[#7A0B0B]">
               Fate Tee(Black)
             </h2>
 
@@ -77,7 +77,7 @@ export default function RedStringOfFate() {
 
             <p className="mt-8 text-2xl font-bold">₹3,499</p>
 
-            <button className="mt-10 px-12 py-4 border border-[#B08D57] text-[#B08D57] hover:bg-[#B08D57] hover:text-black transition">
+            <button className="mt-10 px-12 py-4 border border-[#7A0B0B] text-[#7A0B0B] hover:bg-[#7A0B0B] hover:text-black transition">
               Buy When Released
             </button>
           </div>
@@ -97,7 +97,7 @@ export default function RedStringOfFate() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-20 items-center">
 
           <div className="order-2 md:order-1">
-            <h2 className="text-4xl font-semibold text-[#B08D57]">
+            <h2 className="text-4xl font-semibold text-[#7A0B0B]">
               Fate Tee(White)
             </h2>
 
@@ -109,7 +109,7 @@ export default function RedStringOfFate() {
 
             <p className="mt-8 text-2xl font-bold">₹1,999</p>
 
-            <button className="mt-10 px-12 py-4 border border-[#B08D57] text-[#B08D57] hover:bg-[#B08D57] hover:text-black transition">
+            <button className="mt-10 px-12 py-4 border border[#7A0B0B] text-[#7A0B0B] hover:bg-[#7A0B0B] hover:text-black transition">
               Buy When Released
             </button>
           </div>
@@ -143,7 +143,7 @@ export default function RedStringOfFate() {
           </div>
 
           <div>
-            <h2 className="text-4xl font-semibold text-[#B08D57]">
+            <h2 className="text-4xl font-semibold text-[#7A0B0B]">
               Fate Hoodie(Black)
             </h2>
 
@@ -155,7 +155,7 @@ export default function RedStringOfFate() {
 
             <p className="mt-8 text-2xl font-bold">₹3,499</p>
 
-            <button className="mt-10 px-12 py-4 border border-[#B08D57] text-[#B08D57] hover:bg-[#B08D57] hover:text-black transition">
+            <button className="mt-10 px-12 py-4 border border-[#7A0B0B] text-[#7A0B0B] hover:bg-[#7A0B0B] hover:text-black transition">
               Buy When Released
             </button>
           </div>
@@ -174,7 +174,7 @@ export default function RedStringOfFate() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-20 items-center">
 
           <div className="order-2 md:order-1">
-            <h2 className="text-4xl font-semibold text-[#B08D57]">
+            <h2 className="text-4xl font-semibold text-[#7A0B0B]">
               Fate Hoodie(White)
             </h2>
 
@@ -186,7 +186,7 @@ export default function RedStringOfFate() {
 
             <p className="mt-8 text-2xl font-bold">₹1,999</p>
 
-            <button className="mt-10 px-12 py-4 border border-[#B08D57] text-[#B08D57] hover:bg-[#B08D57] hover:text-black transition">
+            <button className="mt-10 px-12 py-4 border border-[#7A0B0B] text-[#7A0B0B] hover:bg-[#7A0B0B] hover:text-black transition">
               Buy When Released
             </button>
           </div>
