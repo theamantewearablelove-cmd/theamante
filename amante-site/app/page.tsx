@@ -33,7 +33,7 @@ export default function Home() {
       {/* HERO */}
       <section className="px-12 pt-32 pb-24 text-center">
         <h1 className="text-6xl font-bold tracking-tight text-[#B08D57]">
-          LOVE IS THE ONLY LUXURY.
+          LOVE IS THE ONLY LUXURY - prod check
         </h1>
 
         <p className="mt-6 text-gray-400 max-w-xl mx-auto">
