@@ -52,7 +52,7 @@ export default function Home() {
             col.active ? (
               <Link
                 key={col.slug}
-                href={`/collection/${col.slug}`}
+                href={`/collection/eros-collection`}
                 className="group border border-gray-800 rounded-2xl overflow-hidden 
                 hover:border-[#B08D57] hover:-translate-y-3 hover:shadow-2xl 
                 transition-all duration-500"
