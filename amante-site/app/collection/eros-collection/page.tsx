@@ -19,6 +19,7 @@ export default function ErosCollectionPage() {
 
       {/* PAGES OF THE CHAPTER */}
       <section className="px-12 pb-32 max-w-5xl mx-auto space-y-16">
+
         {/* Red String of Fate */}
         <Link
           href="/collection/eros-collection/red-string-of-fate"
@@ -26,7 +27,12 @@ export default function ErosCollectionPage() {
           hover:border-[#B08D57] hover:-translate-y-2 hover:shadow-2xl
           transition-all duration-500"
         >
-          <div className="h-64 bg-gradient-to-br from-red-900/40 to-black"></div>
+          <div
+            className="h-64 bg-cover bg-center"
+            style={{
+              backgroundImage: "url('/backgrounds/red-string-bg.png')",
+            }}
+          />
           <div className="p-8">
             <h2 className="text-3xl font-semibold text-[#B08D57]">
               The Red String of Fate
@@ -44,7 +50,12 @@ export default function ErosCollectionPage() {
           hover:border-[#B08D57] hover:-translate-y-2 hover:shadow-2xl
           transition-all duration-500"
         >
-          <div className="h-64 bg-gradient-to-br from-gray-800 to-black"></div>
+          <div
+            className="h-64 bg-cover bg-center"
+            style={{
+              backgroundImage: "url('/backgrounds/subtle-love-bg.png')",
+            }}
+          />
           <div className="p-8">
             <h2 className="text-3xl font-semibold text-[#B08D57]">
               Subtle Love
@@ -54,7 +65,9 @@ export default function ErosCollectionPage() {
             </p>
           </div>
         </Link>
+
       </section>
     </main>
   );
 }
+
