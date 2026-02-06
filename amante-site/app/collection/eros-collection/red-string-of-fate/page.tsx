@@ -25,26 +25,25 @@ export default function RedStringOfFate() {
 
       {/* HERO */}
       <section className="h-screen flex items-center justify-center text-center px-6">
-        <div>
-          <h1 className="text-6xl md:text-7xl font-bold text-[#B08D57]">
-            The Red String of Fate
-          </h1>
-        </div>
+        <h1 className="text-6xl md:text-7xl font-bold text-[#B08D57]">
+          The Red String of Fate
+        </h1>
       </section>
 
-      {/* STORY */}
-      <section className="px-8 md:px-20 py-32 max-w-4xl mx-auto space-y-24">
+      {/* STORY 1 */}
+      <section className="px-8 md:px-20 py-32 max-w-4xl mx-auto space-y-10">
         <p className="text-2xl leading-relaxed text-gray-200">
-          They say an invisible red thread connects those who are destined
-          to meet — regardless of time, distance, or circumstance.
+          For a long time, nothing changed.
+          The days passed like unfinished sentences, quiet and predictable.
+          Then one moment — small, almost forgettable — shifted everything.
         </p>
 
         <blockquote className="border-l-2 border-[#8B0000] pl-8 text-3xl italic text-gray-300">
-          “It may stretch. It may tangle. But it never breaks.”
+          “When love arrives, it rarely knocks.”
         </blockquote>
       </section>
 
-      {/* PRODUCT 1 — Fate Tee Black */}
+      {/* PRODUCT 1 */}
       {fateTeeBlack && (
         <section className="px-8 md:px-20 py-32 max-w-7xl mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-20 items-center">
@@ -72,28 +71,27 @@ export default function RedStringOfFate() {
         </section>
       )}
 
-        {/* STORY */}
-      <section className="px-8 md:px-20 py-32 max-w-4xl mx-auto space-y-24">
+      {/* STORY 2 */}
+      <section className="px-8 md:px-20 py-32 max-w-4xl mx-auto space-y-10">
         <p className="text-2xl leading-relaxed text-gray-200">
-          They say an invisible red thread connects those who are destined
-          to meet — regardless of time, distance, or circumstance.
+          You didn’t notice it immediately.
+          Change never announces itself.
+          It appeared in smaller things —
+          in the way you waited,
+          in the way you listened,
+          in the way you began to care again.
+        </p>
+
+        <p className="text-xl text-gray-400">
+          By the time you realized, you were already becoming someone new.
         </p>
 
         <blockquote className="border-l-2 border-[#8B0000] pl-8 text-3xl italic text-gray-300">
-          “It may stretch.  
-          It may tangle.  
-          But it never breaks.”
+          “Some feelings rewrite who you are.”
         </blockquote>
-
-        <p className="text-xl leading-relaxed text-gray-400">
-          Love does not always arrive loudly.  
-          Sometimes it waits — patient, silent —  
-          until the moment you are ready to feel it.
-        </p>
       </section>
 
-
-      {/* PRODUCT 2 — Fate Tee White */}
+      {/* PRODUCT 2 */}
       {fateTeeWhite && (
         <section className="px-8 md:px-20 py-32 max-w-7xl mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-20 items-center">
@@ -114,34 +112,34 @@ export default function RedStringOfFate() {
               </Link>
             </div>
 
-         <div className="order-1 md:order-2 h-[260px] md:h-[380px] rounded-3xl overflow-hidden">
+            <div className="order-1 md:order-2 h-[260px] md:h-[380px] rounded-3xl overflow-hidden">
               <img src={fateTeeWhite.image} className="h-full w-full object-cover" />
             </div>
           </div>
         </section>
       )}
-         
-           {/* STORY */}
-      <section className="px-8 md:px-20 py-32 max-w-4xl mx-auto space-y-24">
+
+      {/* STORY 3 */}
+      <section className="px-8 md:px-20 py-32 max-w-4xl mx-auto space-y-10">
         <p className="text-2xl leading-relaxed text-gray-200">
-          They say an invisible red thread connects those who are destined
-          to meet — regardless of time, distance, or circumstance.
+         There are moments when the world feels distant.
+        Crowded rooms feel empty.
+        Conversations lose their meaning.
+
+        Yet somewhere in that silence,
+        a single connection continues to exist — quietly, stubbornly.
+        </p>
+
+        <p className="text-xl text-gray-400">
+         Like warmth that refuses to leave in winter.
         </p>
 
         <blockquote className="border-l-2 border-[#8B0000] pl-8 text-3xl italic text-gray-300">
-          “It may stretch.  
-          It may tangle.  
-          But it never breaks.”
+         “Even in isolation, the thread remains.”
         </blockquote>
-
-        <p className="text-xl leading-relaxed text-gray-400">
-          Love does not always arrive loudly.  
-          Sometimes it waits — patient, silent —  
-          until the moment you are ready to feel it.
-        </p>
       </section>
 
-      {/* PRODUCT 3 — Fate Hoodie Black */}
+      {/* PRODUCT 3 */}
       {fateHoodieBlack && (
         <section className="px-8 md:px-20 py-32 max-w-7xl mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-20 items-center">
@@ -169,29 +167,30 @@ export default function RedStringOfFate() {
         </section>
       )}
 
-
-        {/* STORY */}
-      <section className="px-8 md:px-20 py-32 max-w-4xl mx-auto space-y-24">
+      {/* STORY 4 */}
+      <section className="px-8 md:px-20 py-32 max-w-4xl mx-auto space-y-10">
         <p className="text-2xl leading-relaxed text-gray-200">
-          They say an invisible red thread connects those who are destined
-          to meet — regardless of time, distance, or circumstance.
+         Some bonds are not dramatic.
+         They do not demand attention.
+
+         They simply stay.
+
+         Like winter clothing you never truly put away,
+         because you know the cold always returns —
+         and so does the warmth that protects you from it.
+        </p>
+
+        <p className="text-xl text-gray-400">
+         The thread no longer pulls you forward.
+         It rests beside you.
         </p>
 
         <blockquote className="border-l-2 border-[#8B0000] pl-8 text-3xl italic text-gray-300">
-          “It may stretch.  
-          It may tangle.  
-          But it never breaks.”
+          "The connection is no longer temporary.”
         </blockquote>
-
-        <p className="text-xl leading-relaxed text-gray-400">
-          Love does not always arrive loudly.  
-          Sometimes it waits — patient, silent —  
-          until the moment you are ready to feel it.
-        </p>
       </section>
 
-
-      {/* PRODUCT 4 — Fate Hoodie White */}
+      {/* PRODUCT 4 */}
       {fateHoodieWhite && (
         <section className="px-8 md:px-20 py-32 max-w-7xl mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-20 items-center">
