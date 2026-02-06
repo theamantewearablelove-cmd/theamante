@@ -1,39 +1,78 @@
 import Navbar from "../../../../components/Navbar";
+import Link from "next/link";
+import { products } from "../../../data/products";
 
 export default function RedStringOfFate() {
+  const fateTeeBlack = products.find(p => p.slug === "fate-tee-black");
+  const fateTeeWhite = products.find(p => p.slug === "fate-tee-white");
+  const fateHoodieBlack = products.find(p => p.slug === "fate-hoodie-black");
+  const fateHoodieWhite = products.find(p => p.slug === "fate-hoodie-white");
+
   return (
     <main className="text-white relative">
       <Navbar />
 
-      {/* FIXED BACKGROUND LAYER */}
+      {/* BACKGROUND */}
       <div
         className="fixed inset-0 -z-10"
         style={{
           backgroundImage: "url('/backgrounds/red-string-bg.png')",
           backgroundSize: "cover",
           backgroundPosition: "center",
-          backgroundRepeat: "no-repeat",
         }}
       />
-
-      {/* DARK OVERLAY */}
       <div className="fixed inset-0 bg-black/85 -z-10" />
 
       {/* HERO */}
       <section className="h-screen flex items-center justify-center text-center px-6">
         <div>
-          <h1 className="text-6xl md:text-7xl font-bold tracking-tight text-[#B08D57]">
+          <h1 className="text-6xl md:text-7xl font-bold text-[#B08D57]">
             The Red String of Fate
           </h1>
-
-          <p className="mt-6 text-gray-300 max-w-xl mx-auto text-lg">
-            An invisible bond.  
-            A promise written long before touch.
-          </p>
         </div>
       </section>
 
       {/* STORY */}
+      <section className="px-8 md:px-20 py-32 max-w-4xl mx-auto space-y-24">
+        <p className="text-2xl leading-relaxed text-gray-200">
+          They say an invisible red thread connects those who are destined
+          to meet — regardless of time, distance, or circumstance.
+        </p>
+
+        <blockquote className="border-l-2 border-[#8B0000] pl-8 text-3xl italic text-gray-300">
+          “It may stretch. It may tangle. But it never breaks.”
+        </blockquote>
+      </section>
+
+      {/* PRODUCT 1 — Fate Tee Black */}
+      {fateTeeBlack && (
+        <section className="px-8 md:px-20 py-32 max-w-7xl mx-auto">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-20 items-center">
+            <div className="h-[260px] md:h-[380px] rounded-3xl overflow-hidden">
+              <img src={fateTeeBlack.image} className="h-full w-full object-cover" />
+            </div>
+
+            <div>
+              <h2 className="text-4xl font-semibold text-[#7A0B0B]">
+                {fateTeeBlack.name}
+              </h2>
+              <p className="mt-6 text-gray-400 text-lg">
+                {fateTeeBlack.description}
+              </p>
+              <p className="mt-8 text-2xl font-bold">{fateTeeBlack.price}</p>
+
+              <Link
+                href={`/product/${fateTeeBlack.slug}`}
+                className="inline-block mt-10 px-12 py-4 border border-[#7A0B0B] text-[#7A0B0B] hover:bg-[#7A0B0B] hover:text-white transition"
+              >
+                Pre-order
+              </Link>
+            </div>
+          </div>
+        </section>
+      )}
+
+        {/* STORY */}
       <section className="px-8 md:px-20 py-32 max-w-4xl mx-auto space-y-24">
         <p className="text-2xl leading-relaxed text-gray-200">
           They say an invisible red thread connects those who are destined
@@ -53,232 +92,132 @@ export default function RedStringOfFate() {
         </p>
       </section>
 
-      {/* PRODUCT 1 — IMAGE LEFT */}
-      <section className="px-8 md:px-20 py-32 max-w-7xl mx-auto">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-20 items-center">
-          <div className="h-[520px] rounded-3xl overflow-hidden">
-            <img
-              src="/products/eros-hoodie.jpg"
-              alt="Eros Hoodie"
-              className="h-full w-full object-cover"
-            />
+
+      {/* PRODUCT 2 — Fate Tee White */}
+      {fateTeeWhite && (
+        <section className="px-8 md:px-20 py-32 max-w-7xl mx-auto">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-20 items-center">
+            <div className="order-2 md:order-1">
+              <h2 className="text-4xl font-semibold text-[#7A0B0B]">
+                {fateTeeWhite.name}
+              </h2>
+              <p className="mt-6 text-gray-400 text-lg">
+                {fateTeeWhite.description}
+              </p>
+              <p className="mt-8 text-2xl font-bold">{fateTeeWhite.price}</p>
+
+              <Link
+                href={`/product/${fateTeeWhite.slug}`}
+                className="inline-block mt-10 px-12 py-4 border border-[#7A0B0B] text-[#7A0B0B] hover:bg-[#7A0B0B] hover:text-white transition"
+              >
+                Pre-order
+              </Link>
+            </div>
+
+         <div className="order-1 md:order-2 h-[260px] md:h-[380px] rounded-3xl overflow-hidden">
+              <img src={fateTeeWhite.image} className="h-full w-full object-cover" />
+            </div>
           </div>
+        </section>
+      )}
+         
+           {/* STORY */}
+      <section className="px-8 md:px-20 py-32 max-w-4xl mx-auto space-y-24">
+        <p className="text-2xl leading-relaxed text-gray-200">
+          They say an invisible red thread connects those who are destined
+          to meet — regardless of time, distance, or circumstance.
+        </p>
 
-          <div>
-            <h2 className="text-4xl font-semibold text-[#7A0B0B]">
-              Fate Tee(Black)
-            </h2>
+        <blockquote className="border-l-2 border-[#8B0000] pl-8 text-3xl italic text-gray-300">
+          “It may stretch.  
+          It may tangle.  
+          But it never breaks.”
+        </blockquote>
 
-            <p className="mt-6 text-gray-400 text-lg leading-relaxed">
-              Crafted for those who carry their emotions quietly.
-              Heavyweight comfort. Minimal design.
-              A garment bound by meaning, not trends.
-            </p>
-
-            <p className="mt-8 text-2xl font-bold">₹3,499</p>
-
-            <button className="mt-10 px-12 py-4 border border-[#7A0B0B] text-[#7A0B0B] hover:bg-[#7A0B0B] hover:text-black transition">
-              Buy When Released
-            </button>
-          </div>
-        </div>
-      </section>
-
-      {/* POETIC BREAK */}
-      <section className="py-40 px-6 text-center max-w-4xl mx-auto">
-        <p className="text-2xl md:text-3xl font-light leading-relaxed text-gray-300">
-          “Some connections do not arrive to stay.  
-          They arrive to change you.”
+        <p className="text-xl leading-relaxed text-gray-400">
+          Love does not always arrive loudly.  
+          Sometimes it waits — patient, silent —  
+          until the moment you are ready to feel it.
         </p>
       </section>
 
-      {/* PRODUCT 2 — IMAGE RIGHT */}
-      <section className="px-8 md:px-20 py-32 max-w-7xl mx-auto">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-20 items-center">
+      {/* PRODUCT 3 — Fate Hoodie Black */}
+      {fateHoodieBlack && (
+        <section className="px-8 md:px-20 py-32 max-w-7xl mx-auto">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-20 items-center">
+            <div className="h-[260px] md:h-[380px] rounded-3xl overflow-hidden">
+              <img src={fateHoodieBlack.image} className="h-full w-full object-cover" />
+            </div>
 
-          <div className="order-2 md:order-1">
-            <h2 className="text-4xl font-semibold text-[#7A0B0B]">
-              Fate Tee(White)
-            </h2>
+            <div>
+              <h2 className="text-4xl font-semibold text-[#7A0B0B]">
+                {fateHoodieBlack.name}
+              </h2>
+              <p className="mt-6 text-gray-400 text-lg">
+                {fateHoodieBlack.description}
+              </p>
+              <p className="mt-8 text-2xl font-bold">{fateHoodieBlack.price}</p>
 
-            <p className="mt-6 text-gray-400 text-lg leading-relaxed">
-              Designed for moments that don’t announce themselves.
-              Soft structure. Quiet presence.
-              Love, worn lightly.
-            </p>
-
-            <p className="mt-8 text-2xl font-bold">₹1,999</p>
-
-            <button className="mt-10 px-12 py-4 border border[#7A0B0B] text-[#7A0B0B] hover:bg-[#7A0B0B] hover:text-black transition">
-              Buy When Released
-            </button>
+              <Link
+                href={`/product/${fateHoodieBlack.slug}`}
+                className="inline-block mt-10 px-12 py-4 border border-[#7A0B0B] text-[#7A0B0B] hover:bg-[#7A0B0B] hover:text-white transition"
+              >
+                Pre-order
+              </Link>
+            </div>
           </div>
+        </section>
+      )}
 
-          <div className="order-1 md:order-2 h-[520px] rounded-3xl overflow-hidden">
-            <img
-              src="/products/eros-tee.jpg"
-              alt="Eros Essential Tee"
-              className="h-full w-full object-cover"
-            />
-          </div>
 
-        </div>
-      </section>
-      {/* POETIC BREAK */}
-      <section className="py-40 px-6 text-center max-w-4xl mx-auto">
-        <p className="text-2xl md:text-3xl font-light leading-relaxed text-gray-300">
-          “Some connections do not arrive to stay.  
-          They arrive to change you.”
+        {/* STORY */}
+      <section className="px-8 md:px-20 py-32 max-w-4xl mx-auto space-y-24">
+        <p className="text-2xl leading-relaxed text-gray-200">
+          They say an invisible red thread connects those who are destined
+          to meet — regardless of time, distance, or circumstance.
         </p>
-      </section>
-        {/* PRODUCT 3 — IMAGE LEFT */}
-      <section className="px-8 md:px-20 py-32 max-w-7xl mx-auto">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-20 items-center">
-          <div className="h-[520px] rounded-3xl overflow-hidden">
-            <img
-              src="/products/eros-hoodie.jpg"
-              alt="Eros Hoodie"
-              className="h-full w-full object-cover"
-            />
-          </div>
 
-          <div>
-            <h2 className="text-4xl font-semibold text-[#7A0B0B]">
-              Fate Hoodie(Black)
-            </h2>
+        <blockquote className="border-l-2 border-[#8B0000] pl-8 text-3xl italic text-gray-300">
+          “It may stretch.  
+          It may tangle.  
+          But it never breaks.”
+        </blockquote>
 
-            <p className="mt-6 text-gray-400 text-lg leading-relaxed">
-              Crafted for those who carry their emotions quietly.
-              Heavyweight comfort. Minimal design.
-              A garment bound by meaning, not trends.
-            </p>
-
-            <p className="mt-8 text-2xl font-bold">₹3,499</p>
-
-            <button className="mt-10 px-12 py-4 border border-[#7A0B0B] text-[#7A0B0B] hover:bg-[#7A0B0B] hover:text-black transition">
-              Buy When Released
-            </button>
-          </div>
-        </div>
-      </section>
-       {/* POETIC BREAK */}
-      <section className="py-40 px-6 text-center max-w-4xl mx-auto">
-        <p className="text-2xl md:text-3xl font-light leading-relaxed text-gray-300">
-          “Some connections do not arrive to stay.  
-          They arrive to change you.”
+        <p className="text-xl leading-relaxed text-gray-400">
+          Love does not always arrive loudly.  
+          Sometimes it waits — patient, silent —  
+          until the moment you are ready to feel it.
         </p>
       </section>
 
-      {/* PRODUCT 4 — IMAGE RIGHT */}
-      <section className="px-8 md:px-20 py-32 max-w-7xl mx-auto">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-20 items-center">
 
-          <div className="order-2 md:order-1">
-            <h2 className="text-4xl font-semibold text-[#7A0B0B]">
-              Fate Hoodie(White)
-            </h2>
+      {/* PRODUCT 4 — Fate Hoodie White */}
+      {fateHoodieWhite && (
+        <section className="px-8 md:px-20 py-32 max-w-7xl mx-auto">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-20 items-center">
+            <div className="order-2 md:order-1">
+              <h2 className="text-4xl font-semibold text-[#7A0B0B]">
+                {fateHoodieWhite.name}
+              </h2>
+              <p className="mt-6 text-gray-400 text-lg">
+                {fateHoodieWhite.description}
+              </p>
+              <p className="mt-8 text-2xl font-bold">{fateHoodieWhite.price}</p>
 
-            <p className="mt-6 text-gray-400 text-lg leading-relaxed">
-              Designed for moments that don’t announce themselves.
-              Soft structure. Quiet presence.
-              Love, worn lightly.
-            </p>
+              <Link
+                href={`/product/${fateHoodieWhite.slug}`}
+                className="inline-block mt-10 px-12 py-4 border border-[#7A0B0B] text-[#7A0B0B] hover:bg-[#7A0B0B] hover:text-white transition"
+              >
+                Pre-order
+              </Link>
+            </div>
 
-            <p className="mt-8 text-2xl font-bold">₹1,999</p>
-
-            <button className="mt-10 px-12 py-4 border border-[#7A0B0B] text-[#7A0B0B] hover:bg-[#7A0B0B] hover:text-black transition">
-              Buy When Released
-            </button>
+            <div className="order-1 md:order-2 h-[260px] md:h-[380px] rounded-3xl overflow-hidden">
+              <img src={fateHoodieWhite.image} className="h-full w-full object-cover" />
+            </div>
           </div>
-
-          <div className="order-1 md:order-2 h-[520px] rounded-3xl overflow-hidden">
-            <img
-              src="/products/eros-tee.jpg"
-              alt="Eros Essential Tee"
-              className="h-full w-full object-cover"
-            />
-          </div>
-
-        </div>
-      </section>
-
-            {/* POETIC BREAK */}
-      <section className="py-40 px-6 text-center max-w-4xl mx-auto">
-        <p className="text-2xl md:text-3xl font-light leading-relaxed text-gray-300">
-          “Some connections do not arrive to stay.  
-          They arrive to change you.”
-        </p>
-      </section>
-        {/* PRODUCT 5 — IMAGE LEFT */}
-      <section className="px-8 md:px-20 py-32 max-w-7xl mx-auto">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-20 items-center">
-          <div className="h-[520px] rounded-3xl overflow-hidden">
-            <img
-              src="/products/eros-hoodie.jpg"
-              alt="Eros Hoodie"
-              className="h-full w-full object-cover"
-            />
-          </div>
-
-          <div>
-            <h2 className="text-4xl font-semibold text-[#7A0B0B]">
-              Fate Hoodie(Black)
-            </h2>
-
-            <p className="mt-6 text-gray-400 text-lg leading-relaxed">
-              Crafted for those who carry their emotions quietly.
-              Heavyweight comfort. Minimal design.
-              A garment bound by meaning, not trends.
-            </p>
-
-            <p className="mt-8 text-2xl font-bold">₹3,499</p>
-
-            <button className="mt-10 px-12 py-4 border border-[#7A0B0B] text-[#7A0B0B] hover:bg-[#7A0B0B] hover:text-black transition">
-              Buy When Released
-            </button>
-          </div>
-        </div>
-      </section>
-       {/* POETIC BREAK */}
-      <section className="py-40 px-6 text-center max-w-4xl mx-auto">
-        <p className="text-2xl md:text-3xl font-light leading-relaxed text-gray-300">
-          “Some connections do not arrive to stay.  
-          They arrive to change you.”
-        </p>
-      </section>
-
-      {/* PRODUCT 6 — IMAGE RIGHT */}
-      <section className="px-8 md:px-20 py-32 max-w-7xl mx-auto">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-20 items-center">
-
-          <div className="order-2 md:order-1">
-            <h2 className="text-4xl font-semibold text-[#7A0B0B]">
-              Fate Hoodie(White)
-            </h2>
-
-            <p className="mt-6 text-gray-400 text-lg leading-relaxed">
-              Designed for moments that don’t announce themselves.
-              Soft structure. Quiet presence.
-              Love, worn lightly.
-            </p>
-
-            <p className="mt-8 text-2xl font-bold">₹1,999</p>
-
-            <button className="mt-10 px-12 py-4 border border-[#7A0B0B] text-[#7A0B0B] hover:bg-[#7A0B0B] hover:text-black transition">
-              Buy When Released
-            </button>
-          </div>
-
-          <div className="order-1 md:order-2 h-[520px] rounded-3xl overflow-hidden">
-            <img
-              src="/products/eros-tee.jpg"
-              alt="Eros Essential Tee"
-              className="h-full w-full object-cover"
-            />
-          </div>
-
-        </div>
-      </section>
+        </section>
+      )}
     </main>
   );
 }
