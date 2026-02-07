@@ -27,8 +27,20 @@ const collections = [
 
 export default function Home() {
   return (
-    <main className="min-h-screen bg-black text-white">
+    <main className="min-h-screen text-white relative">
       <Navbar />
+
+       {/* BACKGROUND */}
+      <div
+        className="fixed inset-0 -z-10"
+        style={{
+          backgroundImage: "url('/backgrounds/home-bg.png')",
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+        }}
+      />
+      <div className="fixed inset-0 bg-black/85 -z-10" />
+
 
       {/* HERO */}
       <section className="px-12 pt-32 pb-24 text-center">
