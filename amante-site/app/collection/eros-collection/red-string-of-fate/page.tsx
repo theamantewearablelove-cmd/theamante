@@ -21,7 +21,7 @@ export default function RedStringOfFate() {
           backgroundPosition: "center",
         }}
       />
-      <div className="fixed inset-0 bg-black/85 -z-10" />
+      <div className="fixed inset-0 bg-black/75 -z-10" />
 
       {/* HERO */}
       <section className="h-screen flex items-center justify-center text-center px-6">
