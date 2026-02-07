@@ -39,7 +39,7 @@ export default function Home() {
           backgroundPosition: "center",
         }}
       />
-      <div className="fixed inset-0 bg-black/85 -z-10" />
+      <div className="fixed inset-0 bg-black/70 -z-10" />
 
 
       {/* HERO */}
