@@ -21,7 +21,7 @@ export default function SubtleLove() {
           backgroundPosition: "center",
         }}
       />
-      <div className="fixed inset-0 bg-black/70 -z-10" />
+      <div className="absolute inset-0 bg-black/65 -z-10" />
 
       {/* HERO */}
       <section className="h-screen flex items-center justify-center text-center px-6">
@@ -33,13 +33,20 @@ export default function SubtleLove() {
       {/* STORY 1 */}
       <section className="px-8 md:px-20 py-32 max-w-4xl mx-auto space-y-10">
         <p className="text-2xl leading-relaxed text-gray-200">
-          For a long time, nothing changed.
-          The days passed like unfinished sentences, quiet and predictable.
-          Then one moment — small, almost forgettable — shifted everything.
+          Not every love announces itself.
+
+Some love lives in ordinary days,
+in shared silence,
+in presence that asks for nothing.
+
+It does not arrive like destiny.
+It grows quietly, until one day
+you realize it has always been there.
         </p>
 
         <blockquote className="border-l-2 border-[#8B0000] pl-8 text-3xl italic text-gray-300">
-          “When love arrives, it rarely knocks.”
+         “Some love is not found.
+It is slowly noticed.”
         </blockquote>
       </section>
 
@@ -83,11 +90,13 @@ export default function SubtleLove() {
         </p>
 
         <p className="text-xl text-gray-400">
-          By the time you realized, you were already becoming someone new.
+          By the time you understand it,
+it already feels permanent.
         </p>
 
         <blockquote className="border-l-2 border-[#8B0000] pl-8 text-3xl italic text-gray-300">
-          “Some feelings rewrite who you are.”
+         “Some love is not spoken.
+It is practiced.”
         </blockquote>
       </section>
 

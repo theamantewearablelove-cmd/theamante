@@ -37,9 +37,10 @@ export default function Home() {
           backgroundImage: "url('/backgrounds/home-bg.png')",
           backgroundSize: "cover",
           backgroundPosition: "center",
+          backgroundAttachment: "scroll",
         }}
       />
-      <div className="fixed inset-0 bg-black/70 -z-10" />
+      <div className="absolute inset-0 bg-black/65 -z-10" />
 
 
       {/* HERO */}

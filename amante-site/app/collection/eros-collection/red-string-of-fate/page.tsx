@@ -19,9 +19,10 @@ export default function RedStringOfFate() {
           backgroundImage: "url('/backgrounds/red-string-bg.png')",
           backgroundSize: "cover",
           backgroundPosition: "center",
+          backgroundAttachment: "scroll",
         }}
       />
-      <div className="fixed inset-0 bg-black/75 -z-10" />
+      <div className="absolute inset-0 bg-black/65 -z-10" />
 
       {/* HERO */}
       <section className="h-screen flex items-center justify-center text-center px-6">
