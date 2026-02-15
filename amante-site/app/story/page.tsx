@@ -2,19 +2,17 @@ import Navbar from "../../components/Navbar";
 
 export default function StoryPage() {
   return (
-    <main className="relative min-h-[100svh] text-white overflow-x-hidden">
+    <main className="relative min-h-[200vh] text-white">
       <Navbar />
-{/* BACKGROUND */}
-<div className="fixed inset-0 -z-10 pointer-events-none">
+{/* BACKGROUND WRAPPER */}
+<div className="absolute inset-0 -z-10">
   <div
-    className="absolute inset-0"
+    className="h-full w-full"
     style={{
       backgroundImage: "url('/banners/story-bg.png')",
       backgroundSize: "cover",
       backgroundPosition: "center",
       backgroundRepeat: "no-repeat",
-      transform: "translateZ(0)",
-      willChange: "transform",
     }}
   />
   <div className="absolute inset-0 bg-black/20" />
