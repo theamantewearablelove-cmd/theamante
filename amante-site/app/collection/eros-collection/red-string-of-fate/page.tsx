@@ -9,22 +9,9 @@ export default function RedStringOfFate() {
   const fateHoodieWhite = products.find(p => p.slug === "fate-hoodie-white");
 
   return (
-    <main className="text-white relative">
-      <Navbar />
-
-      {/* BACKGROUND */}
-      <div
-        className="fixed inset-0 -z-10"
-        style={{
-          backgroundImage: "url('/backgrounds/red-string-bg.png')",
-          backgroundSize: "cover",
-          backgroundPosition: "center",
-          backgroundAttachment: "scroll",
-        }}
-      />
-      <div className="absolute inset-0 bg-black/65 -z-10" />
-
-      {/* HERO */}
+  <main className="relative min-h-screen text-white">
+    <Navbar />
+{/* HERO */}
       <section className="h-screen flex items-center justify-center text-center px-6">
         <h1 className="text-6xl md:text-7xl font-bold text-[#B08D57]">
           The Red String of Fate
