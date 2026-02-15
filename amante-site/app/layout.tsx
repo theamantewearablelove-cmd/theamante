@@ -19,25 +19,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${playfair.className} relative overflow-x-hidden`}>
-        
-        {/* GLOBAL FIXED BACKGROUND */}
-        <div className="fixed inset-0 -z-10">
-          <div
-            className="w-full h-full"
-            style={{
-              backgroundImage: "url('/backgrounds/red-string-bg.png')",
-              backgroundSize: "cover",
-              backgroundPosition: "center",
-              backgroundRepeat: "no-repeat",
-            }}
-          />
-          <div className="absolute inset-0 bg-black/65" />
-        </div>
-
-        {children}
-
-      </body>
+      <body className={playfair.className}>{children}</body>
     </html>
   );
 }
