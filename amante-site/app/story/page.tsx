@@ -2,10 +2,10 @@ import Navbar from "../../components/Navbar";
 
 export default function StoryPage() {
   return (
-    <main className="relative min-h-screen text-white">
+    <main className="relative min-h-[100svh] text-white overflow-x-hidden">
       <Navbar />
-         {/* BACKGROUND */}
-<div className="fixed inset-0 z-[-1]">
+{/* BACKGROUND */}
+<div className="fixed inset-0 -z-10 pointer-events-none">
   <div
     className="absolute inset-0"
     style={{
@@ -13,10 +13,13 @@ export default function StoryPage() {
       backgroundSize: "cover",
       backgroundPosition: "center",
       backgroundRepeat: "no-repeat",
+      transform: "translateZ(0)",
+      willChange: "transform",
     }}
   />
   <div className="absolute inset-0 bg-black/20" />
 </div>
+
 
       {/* INTRO */}
       <section className="pt-32 pb-24 px-8">
