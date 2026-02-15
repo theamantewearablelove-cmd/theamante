@@ -4,15 +4,28 @@ export default function StoryPage() {
   return (
     <main className="relative min-h-screen text-white">
       <Navbar />
+         {/* BACKGROUND */}
+<div className="fixed inset-0 z-[-1]">
+  <div
+    className="absolute inset-0"
+    style={{
+      backgroundImage: "url('/banners/story-bg.png')",
+      backgroundSize: "cover",
+      backgroundPosition: "center",
+      backgroundRepeat: "no-repeat",
+    }}
+  />
+  <div className="absolute inset-0 bg-black/20" />
+</div>
 
       {/* INTRO */}
       <section className="pt-32 pb-24 px-8">
         <div className="max-w-2xl mx-auto text-center space-y-8">
-          <h1 className="text-5xl md:text-6xl font-bold text-[#B08D57]">
+          <h1 className="text-5xl md:text-6xl font-bold text-[#3A2416]">
             A Book of Love
           </h1>
 
-          <p className="text-gray-300 text-lg leading-relaxed whitespace-pre-line">
+          <p className="text-[#3E2F23] text-lg leading-relaxed whitespace-pre-line">
 Love has never belonged to one definition.
 It does not wait for permission. It does not arrive announced.
 
@@ -32,7 +45,7 @@ Some begin with a wound.
 Some are built slowly — habit by habit — until one day they feel inevitable.
           </p>
 
-          <p className="text-gray-400 leading-relaxed">
+          <p className="text-[#3E2F23] leading-relaxed">
             This is not a story about love.
             This is a collection of the ways love appears.
           </p>
@@ -42,7 +55,7 @@ Some are built slowly — habit by habit — until one day they feel inevitable.
       {/* CONTINUATION */}
       <section className="px-8 pb-32">
   <div className="max-w-2xl text-center mx-auto space-y-8">
-    <p className="text-gray-300 text-lg leading-relaxed whitespace-pre-line">
+    <p className="text-[#3E2F23] text-lg leading-relaxed whitespace-pre-line">
 
 This is not a story about one kind of love.
 This is not a tale of perfection.
@@ -70,29 +83,29 @@ Welcome to the many ways it appears.
 
       {/* CONTENTS */}
       <section className="px-6 md:px-12 pt-20 pb-40 max-w-3xl mx-auto space-y-6">
-        <h2 className="text-3xl text-[#B08D57] mb-8">
+        <h2 className="text-3xl text-[#3A2416] mb-8">
           Contents
         </h2>
 
         <div className="bg-white/5 backdrop-blur-md border border-white/10 rounded-2xl p-6 transition hover:bg-white/10">
-          <p className="text-sm text-gray-400">Chapter I</p>
-          <h3 className="text-xl mt-1">Eros</h3>
-          <p className="text-gray-400 mt-2">
+          <p className="text-sm text-[#3E2F23]">Chapter I</p>
+          <h3 className="text-[#3A2416] mt-1">Eros</h3>
+          <p className="text-[#3E2F23] mt-2">
             Passion. Desire. The beginning of connection.
           </p>
         </div>
 
         <div className="bg-white/5 backdrop-blur-md border border-white/10 rounded-2xl p-6 transition hover:bg-white/10">
-          <p className="text-sm text-gray-400">Chapter II</p>
-          <h3 className="text-xl mt-1">Philautia</h3>
-          <p className="text-gray-400 mt-2">
+          <p className="text-sm text-[#3E2F23]">Chapter II</p>
+          <h3 className="text-[#3A2416] mt-1">Philautia</h3>
+          <p className="text-[#3E2F23] mt-2">
             The quiet struggle of loving oneself.
           </p>
         </div>
 
         <div className="bg-white/5 backdrop-blur-md border border-white/10 rounded-2xl p-6 opacity-60">
-          <p className="text-sm text-gray-400">More chapters</p>
-          <h3 className="text-xl mt-1">Coming Soon</h3>
+          <p className="text-[#3A2416] text-[#3E2F23]0">More chapters</p>
+          <h3 className="text-[#3E2F23] mt-1">Coming Soon</h3>
         </div>
       </section>
 
