@@ -2,7 +2,7 @@ import Navbar from "../../components/Navbar";
 
 export default function StoryPage() {
   return (
-    <main className="relative min-h-dvh text-white">
+    <main className="relative min-h-screen text-white">
       <Navbar />
          {/* BACKGROUND */}
 <div className="fixed inset-0 z-[-1]">
