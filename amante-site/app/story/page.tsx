@@ -184,22 +184,24 @@ export default function StoryPage() {
   };
 
   return (
-    <main className="relative min-h-[200vh] text-white">
+   <main
+  className="relative min-h-screen text-white bg-cover bg-center"
+  style={{
+    backgroundImage: "url('/banners/story-bg.png')",
+  }}
+>
       <Navbar />
+{/* BACKGROUND */}
+<div className="absolute inset-0 -z-10">
+  <div
+    className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+    style={{
+      backgroundImage: "url('/backgrounds/story-bg.png')",
+    }}
+  />
+  <div className="absolute inset-0 bg-black/20" />
+</div>
 
-      {/* BACKGROUND */}
-      <div className="fixed inset-0 -z-10">
-        <div
-          className="absolute inset-0"
-          style={{
-            backgroundImage: "url('/banners/story-bg.png')",
-            backgroundSize: "cover",
-            backgroundPosition: "center",
-            backgroundRepeat: "no-repeat"
-          }}
-        />
-        <div className="absolute inset-0 bg-black/20" />
-      </div>
 
       {/* CONTENT */}
       <section className="pt-32 pb-24 px-8">
