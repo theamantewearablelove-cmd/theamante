@@ -257,23 +257,30 @@ export default function StoryPage() {
         </div>
       </section>
 
-      {/* CHAPTER NAVIGATION */}
-      <section className="px-6 md:px-12 pb-40 max-w-3xl mx-auto space-y-6">
-        <h2 className="text-3xl text-[#3A2416] mb-8">Contents</h2>
+     {/* CHAPTER NAVIGATION */}
+<section className="px-6 md:px-12 pb-40 max-w-3xl mx-auto space-y-6">
+  <h2 className="text-3xl text-[#3A2416] mb-8">Contents</h2>
 
-        {chapters.map((chapter) =>
-          chapter.slug === activeSlug ? null : (
-            <div
-              key={chapter.slug}
-              onClick={() => switchChapter(chapter.slug)}
-              className="cursor-pointer bg-[#3A2416]/30 backdrop-blur-sm border border-[#3A2416]/40 rounded-2xl p-6 transition hover:bg-[#3A2416]/40"
-            >
-              <p className="text-sm text-[#3E2F23]">{chapter.label}</p>
-              <h3 className="text-[#3A2416] mt-1">{chapter.title}</h3>
-            </div>
-          )
-        )}
-      </section>
-    </main>
+  {/* Real Chapters */}
+  {chapters.map((chapter) =>
+    chapter.slug === activeSlug ? null : (
+      <div
+        key={chapter.slug}
+        onClick={() => switchChapter(chapter.slug)}
+        className="cursor-pointer bg-[#3A2416]/30 backdrop-blur-sm border border-[#3A2416]/40 rounded-2xl p-6 transition hover:bg-[#3A2416]/40"
+      >
+        <p className="text-sm text-[#3E2F23]">{chapter.label}</p>
+        <h3 className="text-[#3A2416] mt-1">{chapter.title}</h3>
+      </div>
+    )
+  )}
+
+  {/* Coming Soon — Always Visible */}
+  <div className="bg-[#3A2416]/20 border border-[#3A2416]/30 rounded-2xl p-6 opacity-60">
+    <p className="text-sm text-[#3E2F23]">More Chapters</p>
+    <h3 className="text-[#3A2416] mt-1">Coming Soon</h3>
+  </div>
+</section>
+</main>
   );
 }
