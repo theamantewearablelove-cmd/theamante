@@ -7,31 +7,47 @@ export default function ProductsPage() {
     <main className="bg-black text-white min-h-screen">
       <Navbar />
 
-      <section className="px-12 pt-32 pb-24">
-        <h1 className="text-4xl font-semibold mb-16 text-[#B08D57]">
-          Products
-        </h1>
+      <section className="px-4 md:px-20 pt-32 pb-24 max-w-[1400px] mx-auto">
+        
+        {/* Heading */}
+        <div className="mb-20">
+          <h1 className="text-4xl md:text-5xl font-light tracking-wide text-[#B08D57]">
+            The Collection
+          </h1>
+          <div className="w-24 h-[1px] bg-[#5C3A21] mt-6"></div>
+        </div>
 
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-10">
+        {/* Products Grid */}
+       <div className="grid grid-cols-2 md:grid-cols-3 gap-6 md:gap-10">
           {products.map((product) => (
-            <Link
-              key={product.slug}
-              href={`/product/${product.slug}`}
-              className="border border-gray-800 rounded-2xl overflow-hidden hover:border-[#B08D57] transition"
-            >
-              <img
-                src={product.image}
-                className="h-56 w-full object-cover"
-                alt={product.name}
-              />
+            <Link key={product.id} href={`/products/${product.slug}`}>
+              <div className="group rounded-2xl border border-[#1E1510] bg-[#0F0B08] overflow-hidden transition duration-500 hover:border-[#5C3A21] cursor-pointer">
+                
+                {/* Image */}
+                <div className="aspect-[4/5] overflow-hidden">
+                  <img
+                    src={product.image}
+                    alt={product.name}
+                    className="w-full h-full object-cover transition duration-700 group-hover:scale-[1.05]"
+                  />
+                </div>
 
-              <div className="p-6">
-                <p className="text-[#B08D57]">{product.name}</p>
-                <p className="text-gray-400 text-sm">{product.price}</p>
+                {/* Content */}
+                <div className="px-6 py-6 bg-[#120E0B] space-y-3">
+                  <h3 className="text-[18px] tracking-wide text-[#D6C2A8] group-hover:text-[#E7D4BA] transition">
+                    {product.name}
+                  </h3>
+
+                  <p className="text-[15px] text-[#8E7A65]">
+                    ₹{product.price}
+                  </p>
+                </div>
+
               </div>
             </Link>
           ))}
         </div>
+
       </section>
     </main>
   );
