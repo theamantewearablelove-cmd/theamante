@@ -4,6 +4,7 @@ export type Product = {
   price: number;
   image: string;
   slug: string;
+  description:string;
 };
 
 export const products: Product[] = [
@@ -13,6 +14,7 @@ export const products: Product[] = [
     price: 1999,
     image: "/products/noir.jpg",
     slug: "amante-noir-tee",
+     description: "amante",
   },
   {
     id: 2,
@@ -20,5 +22,6 @@ export const products: Product[] = [
     price: 2499,
     image: "/products/crimson.jpg",
     slug: "crimson-silence",
+    description: "amante",
   },
 ];
